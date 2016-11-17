@@ -29,9 +29,10 @@ app.controller("controlador",["$scope","$http","$ionicPopup",function($scope,$ht
 
  //Popup
  $scope.showPopup = function() {
-  $scope.data = {};
+ 
   $ionicPopup.show({
-    templateUrl: 'templates/idiomas.html',
+    title :'Hola que ase',
+    templateUrl : 'templates/popup.html',
     
     scope: $scope,
     buttons: [
