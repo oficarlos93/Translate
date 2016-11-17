@@ -1,0 +1,42 @@
+var app = angular.module("moduloControlador",[]);
+app.factory('ServicioPrincipal',
+['$http',
+function ($http) {
+  return {
+    recuperarurllarga: function () {
+      return $http({
+        method: 'GET',        
+        url: 'http://ofimenutesting.cloudapp.net/api/sincronizacion/sincronizacioninicial/88/000',
+        headers:{ 'Content-Type':'application/json','Access-Control-Allow-Origin':'*'},
+        
+      });
+    }    
+  }
+}]);
+
+
+
+app.controller("controlador",["$scope","ServicioPrincipal",function($scope,ServicioPrincipal){
+    $scope.mensaje="json";
+     $scope.bajarJSON = function(){
+    ServicioPrincipal.recuperarurllarga()
+        .success(function(urllong){
+          console.log(urllong)
+        }).error(function (){
+
+        })
+        
+     }
+}])
+
+
+
+ importarDatosEjemplo: function () {
+      return $http({
+        method: 'GET',
+        timeout: 20000,
+        url: 'datosejemplo.json',
+        //url: window.localStorage.getItem("UrlEmpresa")+'/api/validateuserws',
+        headers:{ 'Content-Type':'application/json','Access-Control-Allow-Origin':'*'}
+      });
+    },
