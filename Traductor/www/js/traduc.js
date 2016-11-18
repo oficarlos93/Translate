@@ -1,7 +1,7 @@
 var translations = {
-		"en": {
-				"hp1": "Swipe to the right to reveal the left menu.",
-				"hp2": "(On desktop click and drag from left to right)",
+		"ca-es": {
+				"hp1": "Desliz e ded haci l derech par mostra e men d l izquierd.",
+				"hp2": "(En el escritori, hag cli y arrastr de izquierd a derech.)",
           "ht": "Welcome"
 		},
 		"de": {

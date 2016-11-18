@@ -20,7 +20,8 @@ app.controller("controlador",["$scope","$http","$ionicPopup",function($scope,$ht
 /*$scope.showAlert = function() {
    var alertPopup = $ionicPopup.alert({
      title: 'Try again later!',
-     template: 'No Connection Found.'
+     templateUrl: 'templates/popup.html',
+     
    });
    alertPopup.then(function(res) {
      console.log('Thank you for advice.');
@@ -30,7 +31,7 @@ app.controller("controlador",["$scope","$http","$ionicPopup",function($scope,$ht
  //Popup
  $scope.showPopup = function() {
  
-  $ionicPopup.show({
+  var myPopup = $ionicPopup.show({
     title :'Hola que ase',
     templateUrl : 'templates/popup.html',
     
@@ -41,11 +42,14 @@ app.controller("controlador",["$scope","$http","$ionicPopup",function($scope,$ht
         text: '<b>Save</b>',
         type: 'button-positive',
         onTap: function(e) {
-         //Cuando le das a aceptar...
+         console.log("Save");
         }
       }
     ]
 	});
+    $scope.cerrarPopup = function(){
+      myPopup.close();
     }
+}
 
 }])

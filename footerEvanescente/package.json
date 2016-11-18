@@ -1,7 +1,7 @@
 {
-  "name": "translate",
+  "name": "footerevanescente",
   "version": "1.1.1",
-  "description": "Translate: An Ionic project",
+  "description": "footerEvanescente: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
@@ -15,18 +15,12 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    "cordova-plugin-whitelist",
+    "ionic-plugin-keyboard",
     "cordova-plugin-console",
-    "cordova-plugin-statusbar",
-    "cordova-plugin-device",
     "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard"
+    "cordova-plugin-device",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-whitelist"
   ],
-  "cordovaPlatforms": [
-    {
-      "platform": "android",
-      "version": "",
-      "locator": "android"
-    }
-  ]
+  "cordovaPlatforms": []
 }

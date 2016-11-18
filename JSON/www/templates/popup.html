@@ -1,6 +1,6 @@
 <div class="list">
 
-    <a ng-repeat="item in result" class="item item-avatar">
+    <a ng-repeat="item in result" class="item item-avatar" ng-model=nombre ng-click="cerrarPopup()">
 
         <img ng-src="http://ofimenutesting.cloudapp.net{{ item.Imagen }}">
         <h2>{{ item.Nombre }}</h2>

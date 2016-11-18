@@ -28,7 +28,7 @@ angular.module('starter', ['ionic','pascalprecht.translate','moduloMain'])
 		$translateProvider.translations(lang, translations[lang]);
 	}
 	
-	$translateProvider.preferredLanguage('en');
+	$translateProvider.preferredLanguage('es');
 
         $stateProvider
             .state('main', {
